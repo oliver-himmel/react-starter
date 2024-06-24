@@ -3,7 +3,7 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "npm install"
+      "command": "npm install --force"
     }
   ],
 
@@ -19,15 +19,13 @@
     },
     "build": {
       "name": "build",
-      "command": "npm run build"
-    },
-    "lint": {
-      "name": "lint",
-      "command": "npm run lint"
+      "command": "npm run build",
+      "runAtStart": false
     },
     "preview": {
       "name": "preview",
-      "command": "npm run preview"
+      "command": "npm run preview",
+      "runAtStart": false
     }
   }
 }
