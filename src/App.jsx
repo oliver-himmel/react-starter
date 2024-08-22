@@ -1,8 +1,10 @@
 import { KernAlert } from "@kern-ux/react";
+import { Heading } from "./Heading";
 
 export default function App() {
   return (
     <div className="App">
+      <Heading />
       <KernAlert
         _label="KERN-UX erfolgreich eingerichtet"
         _variant="card"
